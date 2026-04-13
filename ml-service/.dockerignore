@@ -1,10 +1,46 @@
+# Python
 __pycache__
-*.pyc
+**/__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+.eggs
+dist
+build
+
+# Virtual env
+.venv
+venv
+env
+
+# Testes e cobertura (não entram na imagem de runtime)
+tests
 .pytest_cache
 .coverage
 htmlcov
-.venv
-venv
-.env
+coverage.xml
+pytest.ini
+
+# Ferramentas / IDE
 .git
+.gitignore
 .idea
+.vscode
+*.swp
+*.swo
+
+# Segredos e env local
+.env
+.env.*
+!.env.example
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Docs e CI (não necessários no container)
+*.md
+.github
